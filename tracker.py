@@ -9,10 +9,14 @@ CHECK_INTERVAL = 20  # seconds
 PRODUCTS_FILE = "products.json"
 
 def load_products():
-    if not os.path.exists(PRODUCTS_FILE):
+    url = "https://raw.githubusercontent.com/Lofty95/pokewatch/main/products.json"
+    try:
+        res = requests.get(url, timeout=10)
+        return res.json()
+    except Exception as e:
+        print(f"Failed to load products: {e}")
         return []
-    with open(PRODUCTS_FILE) as f:
-        return json.load(f)
+
 
 def detect_stock(html):
     lower = html.lower()
