@@ -4,7 +4,7 @@ import os
 import json
 
 NTFY_TOPIC = "pokewatch-lofts"
-CHECK_INTERVAL = 60  # seconds
+CHECK_INTERVAL = 20  # seconds
 
 PRODUCTS_FILE = "products.json"
 
