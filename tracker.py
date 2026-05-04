@@ -1,12 +1,9 @@
 import requests
 import time
-import os
 import json
 
 NTFY_TOPIC = "pokewatch-lofts"
-CHECK_INTERVAL = 20  # seconds
-
-PRODUCTS_FILE = "products.json"
+CHECK_INTERVAL = 60
 
 def load_products():
     url = "https://raw.githubusercontent.com/Lofty95/pokewatch/main/products.json"
@@ -17,32 +14,33 @@ def load_products():
         print(f"Failed to load products: {e}")
         return []
 
-
 def detect_stock(html):
     lower = html.lower()
-    out_signals = ["sold out", "out of stock", "currently unavailable",
-                   "notify me when available", '"availability":"outofstock"',
-                   "outofstock"]
+    out_signals = [
+        'sold out', 'out of stock', 'currently unavailable',
+        'notify me when available', 'outofstock', 'is-sold-out', 'soldout',
+    ]
     for s in out_signals:
         if s in lower:
             return False
-    in_signals = ["add to bag", "add to basket", "add to cart",
-                  '"availability":"instock"', "instock"]
+    in_signals = [
+        'add to bag', 'add to basket', 'add to cart',
+        'instock', 'add-to-cart', 'addtocart', 'buy now',
+    ]
     for s in in_signals:
         if s in lower:
             return True
     return False
 
 def check_product(product):
-    url = product["url"]
     name = product["name"]
+    url = product["url"]
     headers = {"User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15"}
     try:
         res = requests.get(url, headers=headers, timeout=15)
-        in_stock = detect_stock(res.text)
-print(f"DEBUG {name}: status={res.status_code} in_stock={in_stock} snippet={res.text[:300]}")
-return in_stock
-
+        result = detect_stock(res.text)
+        print(f"DEBUG {name}: status={res.status_code} in_stock={result} snippet={res.text[200:400]}")
+        return result
     except Exception as e:
         print(f"Error checking {name}: {e}")
         return None
@@ -57,7 +55,7 @@ def send_notification(name, url):
                 "Tags": "rotating_light",
                 "Click": url,
             },
-            data=f"Go buy it now! Tap to open the product page.",
+            data="Go buy it now! Tap to open the product page.",
             timeout=10
         )
         print(f"Notification sent for {name}")
@@ -67,11 +65,10 @@ def send_notification(name, url):
 def main():
     print("PokéWatch started. Checking every 60 seconds...")
     last_status = {}
-
     while True:
         products = load_products()
         if not products:
-            print("No products in products.json yet. Waiting...")
+            print("No products loaded. Waiting...")
         for product in products:
             name = product["name"]
             url = product["url"]
