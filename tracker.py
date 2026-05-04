@@ -39,7 +39,10 @@ def check_product(product):
     headers = {"User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15"}
     try:
         res = requests.get(url, headers=headers, timeout=15)
-        return detect_stock(res.text)
+        in_stock = detect_stock(res.text)
+print(f"DEBUG {name}: status={res.status_code} in_stock={in_stock} snippet={res.text[:300]}")
+return in_stock
+
     except Exception as e:
         print(f"Error checking {name}: {e}")
         return None
