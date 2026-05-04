@@ -1,6 +1,107 @@
 [
   {
-    "name": "Example Product",
+    "name": "Mega Evolution Chaos Rising ETB",
     "url": "https://www.pokemoncenter.com/en-gb/product/10-10399-109/pokemon-tcg-mega-evolution-chaos-rising-pokemon-center-elite-trainer-box"
+  },
+  {
+    "name": "Mega Evolution Ascended Heroes ETB",
+    "url": "https://www.pokemoncenter.com/en-gb/product/10-10315-108/pokemon-tcg-mega-evolution-ascended-heroes-pokemon-center-elite-trainer-box"
+  },
+  {
+    "name": "Mega Evolution Perfect Order ETB",
+    "url": "https://www.pokemoncenter.com/en-gb/product/10-10372-109/pokemon-tcg-mega-evolution-perfect-order-pokemon-center-elite-trainer-box"
+  },
+  {
+    "name": "Scarlet & Violet 151 ETB",
+    "url": "https://www.pokemoncenter.com/en-gb/product/290-85466/pokemon-tcg-scarlet-and-violet-151-pokemon-center-elite-trainer-box"
+  },
+  {
+    "name": "Mega Evolution Phantasmal Flames ETB",
+    "url": "https://www.pokemoncenter.com/en-gb/product/10-10186-109/pokemon-tcg-mega-evolution-phantasmal-flames-pokemon-center-elite-trainer-box"
+  },
+  {
+    "name": "Destined Rivals ETB",
+    "url": "https://www.pokemoncenter.com/en-gb/product/100-10653/pokemon-tcg-scarlet-and-violet-destined-rivals-pokemon-center-elite-trainer-box"
+  },
+  {
+    "name": "Celebrations ETB",
+    "url": "https://www.pokemoncenter.com/en-gb/product/290-80986/pokemon-tcg-celebrations-pokemon-center-elite-trainer-box"
+  },
+  {
+    "name": "Paldean Fates ETB",
+    "url": "https://www.pokemoncenter.com/en-gb/product/290-85619/pokemon-tcg-scarlet-and-violet-paldean-fates-pokemon-center-elite-trainer-box"
+  },
+  {
+    "name": "Battle Styles ETB - Single Strike Urshifu",
+    "url": "https://www.pokemoncenter.com/en-gb/product/699-17080/pokemon-tcg-sword-and-shield-battle-styles-elite-trainer-box-single-strike-urshifu"
+  },
+  {
+    "name": "Unified Minds ETB",
+    "url": "https://www.pokemoncenter.com/en-gb/product/170-80584/pokemon-tcg-sun-and-moon-unified-minds-elite-trainer-box"
+  },
+  {
+    "name": "Unbroken Bonds ETB",
+    "url": "https://www.pokemoncenter.com/en-gb/product/169-80563/pokemon-tcg-sun-and-moon-unbroken-bonds-elite-trainer-box"
+  },
+  {
+    "name": "Brilliant Stars ETB",
+    "url": "https://www.pokemoncenter.com/en-gb/product/180-85012/pokemon-tcg-sword-and-shield-brilliant-stars-elite-trainer-box"
+  },
+  {
+    "name": "Mega Evolution ETB - Mega Lucario",
+    "url": "https://www.pokemoncenter.com/en-gb/product/10-10047-108/pokemon-tcg-mega-evolution-pokemon-center-elite-trainer-box-mega-lucario"
+  },
+  {
+    "name": "Paradox Rift ETB - Iron Valiant",
+    "url": "https://www.pokemoncenter.com/en-gb/product/187-85415/pokemon-tcg-scarlet-and-violet-paradox-rift-pokemon-center-elite-trainer-box-iron-valiant"
+  },
+  {
+    "name": "Chaos Rising Booster Bundle",
+    "url": "https://www.pokemoncenter.com/en-gb/product/10-10403-101/pokemon-tcg-mega-evolution-chaos-rising-booster-bundle-6-packs"
+  },
+  {
+    "name": "Chaos Rising Booster Display Box",
+    "url": "https://www.pokemoncenter.com/en-gb/product/10-10407-101/pokemon-tcg-mega-evolution-chaos-rising-booster-display-box-36-packs"
+  },
+  {
+    "name": "Prismatic Evolutions Booster Bundle",
+    "url": "https://www.pokemoncenter.com/en-gb/product/10-10025-101/pokemon-tcg-scarlet-and-violet-prismatic-evolutions-booster-bundle-6-packs"
+  },
+  {
+    "name": "Ascended Heroes Booster Bundle",
+    "url": "https://www.pokemoncenter.com/en-gb/product/10-10311-107/pokemon-tcg-mega-evolution-ascended-heroes-booster-bundle-6-packs"
+  },
+  {
+    "name": "Phantasmal Flames Booster Bundle",
+    "url": "https://www.pokemoncenter.com/en-gb/product/10-10191-101/pokemon-tcg-mega-evolution-phantasmal-flames-booster-bundle-6-packs"
+  },
+  {
+    "name": "White Flare Booster Bundle",
+    "url": "https://www.pokemoncenter.com/en-gb/product/10-10035-109/pokemon-tcg-scarlet-and-violet-white-flare-booster-bundle-6-packs"
+  },
+  {
+    "name": "Ascended Heroes Mini Tin - Pikachu & Tepig",
+    "url": "https://www.pokemoncenter.com/en-gb/product/10-10318-119/pokemon-tcg-mega-evolution-ascended-heroes-mini-tin-pikachu-and-tepig"
+  },
+  {
+    "name": "Ascended Heroes Mini Tin - Togepi & Totodile",
+    "url": "https://www.pokemoncenter.com/en-gb/product/10-10318-125/pokemon-tcg-mega-evolution-ascended-heroes-mini-tin-togepi-and-totodile"
+  },
+  {
+    "name": "Ascended Heroes Mini Tin - Clefairy & Chikorita",
+    "url": "https://www.pokemoncenter.com/en-gb/product/10-10318-113/pokemon-tcg-mega-evolution-ascended-heroes-mini-tin-clefairy-and-chikorita"
+  },
+  {
+    "name": "Ascended Heroes Mini Tin - Zorua & Cramorant",
+    "url": "https://www.pokemoncenter.com/en-gb/product/10-10318-131/pokemon-tcg-mega-evolution-ascended-heroes-mini-tin-zorua-and-cramorant"
+  },
+  {
+    "name": "Ascended Heroes Mini Tin - Riolu & Darumaka",
+    "url": "https://www.pokemoncenter.com/en-gb/product/10-10318-107/pokemon-tcg-mega-evolution-ascended-heroes-mini-tin-riolu-and-darumaka"
+  },
+  {
+    "name": "Destined Rivals Booster Bundle & Quick Ball Bundle",
+    "url": "https://www.pokemoncenter.com/en-gb/product/BUNDLE1173/destined-rivals-booster-bundle-and-quick-ball-replica-bundle"
   }
 ]
+
